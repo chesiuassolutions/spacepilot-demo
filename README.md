@@ -1,4 +1,4 @@
-# Space Pilot Simulator DEMO
+# SpacePilot Simulator DEMO
 
 ## Overview
 **SpacePilot** is the onboard controller for spacecraft. It leverages legacy algorithms that have been successfully operating in space, combined with AI-driven enhancements. This repository provides a simulator that integrates **Space Pilot**, allowing users to fly a virtual spacecraft, visualize sensor readings, and interact with actuators.

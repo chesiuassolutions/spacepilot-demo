@@ -1,0 +1,52 @@
+{
+    "commands": {
+        "mode": [
+            {
+                "time": 0,
+                "mode": "NONE"
+            },
+            {
+                "time": 200,
+                "mode": "SAFE_MODE_DETUMBLING"
+            },
+            {
+                "time": 2200,
+                "mode": "SAFE_MODE_SUN_POINTING"
+            },
+            {
+                "time": 6200,
+                "mode": "NOM_MODE_LVLH"
+            },
+            {
+                "time": 10200,
+                "mode": "ORBIT_CONTROL_MODE"
+            },
+            {
+                "time": 12200,
+                "mode": "NOM_MODE_ECEF_POINTING"
+            }
+        ]
+    },
+    "anglesBias":[
+        {
+            "time": 1500,
+            "bias_angles": [90, 0, 0],
+            "units": "deg"          
+        },
+        {
+            "time": 7700,
+            "bias_angles": [0, 0, 0],
+            "units": "deg"          
+        },
+        {
+            "time": 8200,
+            "bias_angles": [0, 180, 0],
+            "units": "deg"          
+        },
+        {
+            "time": 8700,
+            "bias_angles": [0, 0, 0],
+            "units": "deg"          
+        }
+    ]
+}

@@ -1,0 +1,233 @@
+{
+  "spacecraft": {
+    "mass_prop" :{
+      "mass" : {
+        "value" : 1100,
+        "units" : "Kg",
+        "comment" : "SC mass"
+      },
+      "inertia_matrix_stowed": {
+        "units": "Kgm^2",
+        "value": [
+          [900,         0,            0],
+          [0,           800,          0],
+          [0,           0,          1200]
+          ]
+        },    
+      "inertia_matrix": {
+        "units": "Kgm^2",
+        "value":[
+          [900,         0,            0],
+          [0,           800,          0],
+          [0,           0,          1200]
+          ]
+        }    
+      },
+    "residual_dipole" : {
+      "units": "Am2",
+      "value": [12, 12, 12]
+    }
+  },
+  "controller": {
+    "mode" : {
+      "nominal_mode" : {
+        "qi_t" : {
+          "value" : [1, 0, 0, 0],
+          "units" : "",
+          "comment" : "inertial target quaternion"
+        },
+        "quat_feedback" : {
+          "bandwidth_hz" : {
+            "value": 0.03,
+            "units": "Hz",
+            "comment": "Controller bandwidth"
+          },
+          "damping_ratio": {
+            "value": 0.707,
+            "units": "",
+            "comment": "Damping ratio"
+          },
+          "integral_scale": {
+            "value": 0.0001,
+            "units": "",
+            "comment": "Integral scale factor"
+          },
+          "angle_error_ctrl_int_on_deg": {
+            "value": 0,
+            "units": "deg",
+            "comment": "Angle error control integral activation"
+          },
+          "prop_ctrl_max_mag_Nm": {
+            "value": 1.7,
+            "units": "Nm",
+            "comment": "Max proportional control torque"
+          },
+          "derivative_ctrl_max_mag_Nm": {
+            "value": 1.7,
+            "units": "Nm",
+            "comment": "Max derivative control torque"
+          },
+          "integral_ctrl_max_mag_Nm": {
+            "value": 0.001,
+            "units": "Nm",
+            "comment": "Max integral control torque"
+          }
+        },
+        "mom_mgmt": {
+          "flag_active" : {
+            "value" : 1,
+            "units" : "",
+            "comment" : "Activate momentum management"
+          },
+          "krws_null" : {
+            "value" : 1e-2,
+            "units" : "",
+            "comment" : "RWs null controller gain"
+          },
+          "krws_desat" : {
+            "value": [
+            [0.008e1, 0, 0, 0],
+            [0, 0.008e1, 0, 0],
+            [0, 0, 0.008e1, 0],
+            [0, 0, 0, 0.008e1]
+          ],
+          "units" : "",
+          "comment" : "Torquerods momentum management gain for the RWs" 
+        }
+        },
+        "slew" : {
+          "max_rate": {
+            "value" : 0.8,
+            "units" : "deg/s",
+            "comment" : "Max SC rate during slew rotation"
+          },
+          "max_dot_rate" : {
+            "value" : 0.010,
+            "units" : "deg/s^2",
+            "comment" : "Max SC acceleration during slew rotation"
+          }
+        },
+        "geod_target" : {
+          "value" : [ 25.276987, 55.296249, 0],
+          "units" : "deg, deg, m",
+          "comment" : "Lat, long, alt"
+        },
+        "dyn_target":  {
+          "value": false,
+          "units": "",
+          "comment": "Flag to override geod_target with the satellite target position"
+        }
+      },
+      "safe_mode": {
+        "sun_pointing": {
+          "bandwidth_hz": {
+            "value": 0.01,
+            "units": "Hz",
+            "comment": "Controller bandwidth"
+          },
+          "damping_ratio": {
+            "value": 0.707,
+            "units": "",
+            "comment": "Damping ratio"
+          },
+          "hrws_bias": {
+            "value": [-0.005, 0.005, -0.005, 0.005],
+            "units": "Nms",
+            "comment": "RWs momentum bias"
+          },
+          "use_custom_gains": {
+            "value": false,
+            "units": "",
+            "comment": "if true custom gains are used, see below"
+          },
+          "custom_gains": {
+            "kp": {
+              "value": [
+                [0.55, 0, 0],
+                [0, 0.55, 0],
+                [0, 0, 0.55]
+              ],
+              "units": "",
+              "comment": "Proportional gains"
+            },
+            "kd": {
+              "value": [
+                [20, 0, 0],
+                [0, 20, 0],
+                [0, 0, 20]
+              ],
+              "units": "",
+              "comment": "Derivative gains"
+            }
+          },
+          "prop_ctrl_max_mag": {
+            "value": 1.7,
+            "units": "Nm",
+            "comment": "Max proportional control torque"
+          }
+        },
+        "detumbling": {
+          "krw": {
+            "value": 20,
+            "units": "",
+            "comment": "Reaction wheel detumbling gain"
+          },
+          "bdot_gains": {
+            "value": 5e9,
+            "units": "",
+            "comment": "B-dot control gains"
+          }
+        },
+        "krws_desat" : {
+          "value" : [
+          [0.005e3, 0, 0, 0],
+          [0, 0.005e3, 0, 0],
+          [0, 0, 0.005e3, 0],
+          [0, 0, 0, 0.005e3]
+          ],
+          "units" : "",
+          "comment" : ""
+        },
+        "krws_null" : {
+          "value" : 1e-2,
+          "units" : "",
+          "comment" : "RWs null controller gain"
+        },
+        "w_rws_bias_norm" : {
+          "value" : 1500,
+          "units" : "RPM",
+          "comment" : ""
+        }
+      }
+    }
+  },
+  "propagator": {
+    "use_SGP4": {
+      "value": false,
+      "units": "",
+      "comment": "Set to true to use the SGP4 orbit propagator"
+    },
+    "TLE_line1": {
+      "value": "1 32792U 08021K   24289.46090419  .00003259  00000+0  39878-3 0  9998",
+      "units": "",
+      "comment": "TLE line 1"
+    },
+    "TLE_line2": {
+      "value": "2 32792  98.1001 267.7557 0026229 153.5658 206.6900 14.83703140888656",
+      "units": "",
+      "comment": "TLE line2"
+    },
+    "initial_conditions": {
+      "rsc_i": {
+        "value": [0,0,0],
+        "units": "m",
+        "comment": "Spacecraft initial position in ECI"
+      },
+      "vsc_i": {
+        "value": [0,0,0],
+        "units": "m/s",
+        "comment": "Spacecraft initial velocity in ECI"
+      }
+    }
+  }
+}

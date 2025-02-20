@@ -1,0 +1,185 @@
+2025-02-11 22:13:18
+Program is running with a valid license.
+
+ -------- SIMULATION PARAMETERS --------
+Scenario: NOMINAL
+2025-02-11 22:13:18
+Keplerian Elements: [ 69781370.0017 85 160 0 270 ]
+Initial position-velocity (rsc_i): [ -207657.803368637 -6546156.42919537 2373539.55358006 620.03941790754 -2589.34047344976 -7087.08297645688 ] meters-meters/second
+Orbit rate (wo): 0.00108307786996702 rad
+Initial position (rsc_i): [ -207657.803368637 -6546156.42919537 2373539.55358006 ] meters
+Initial velocity (vsc_i): [ 620.03941790754 -2589.34047344976 -7087.08297645688 ] meters/second
+Initial Rates: [ -0.4 0.2 -0.5 ] deg/s
+Initial Angles: [ -15 0 -70 ] deg
+Initial Quaternions: [ 0.812144084994173 -0.106920797190313 0.0748667481840488 -0.568669410425347 ]
+Initial Reaction Wheel Rates: [ 0 0 0 0 ] rad/s
+sada_zero_angle: 0
+bam_zero_angle: 1.0471975511966
+
+ -------- SENSORS PARAMETERS --------
+Sun Sensors Half FOV: 80 deg
+Sun Sensors Body-to-Sensor Rotation Matrix (Flattened R_bs): [ -1 0 0 0 -1 0 0 0 -1 ]
+Sun Sensors Irradiation Level: 1361 W/m2
+Sun Sensors Irradiation Albedo: 100 W/m2
+Sun Sensors Irradiation Noise: 0.05
+Gyroscope Noise Flag: 0
+Gyroscope Bias: [ 0.005 -0.005 -0.002 ] rad/s
+Gyroscope Calibration Matrix: 
+1 0 0 
+0 1 0 
+0 0 1 
+Gyroscope Noise Variance: 0
+Gyroscope Body-to-Sensor Rotation Matrix (Rot_bs): 
+1 0 0 
+0 1 0 
+0 0 1 
+Gyroscope Angular Random Walk: 0.00087 rad/sqrt(s)
+Gyroscope Bias Instability: 1.45e-05 rad/s
+Gyroscope Scale Factor: 1.001
+Star Trackers Reference Vectors (Flattened): [ 1 -1 0 0 0 0 ]
+Star Trackers Noise Variance: 1.93925e-05
+Star Trackers Quaternion 1 Rotation Matrix (Flattened): [ 1 0 0 0 1 0 0 0 1 ]
+Star Trackers Quaternion 2 Rotation Matrix (Flattened): [ 1 0 0 0 1 0 0 0 1 ]
+Star Trackers Noise Flag: 0
+GNSS Position Noise Variance: 0
+GNSS Velocity Noise Variance: 0
+
+ -------- SPACECRAFT PARAMETERS --------
+Spacecraft mass: 1100 kg
+Inertia matrix (stowed): 
+900 0 0 
+0 800 0 
+0 0 1200 
+Inertia matrix (deployed): 
+900 0 0 
+0 800 0 
+0 0 1200 
+Deploy flag: 1
+Residual dipole: [ 12 12 12 ] Am^2
+
+     *** Modified Safe Parameters ***
+w_rws_bias_norm: 157.07963267949
+hrws_null_ref: [ 
+-3.00022098417825 3.00022098417825 -3.00022098417825 3.00022098417825 ]
+hrws_bias_norm: 3.00022098417825
+wait_before_switch: 300
+wait_ph1_2_ph2: 300
+wait_ph2_2_ph3: 300
+hsc_min: 1
+hsc_threshold: 7
+wsc_sa_dep_cmd: 0.00174532925199433
+w_rws_bias: [ -157.07963267949 -157.07963267949 -157.07963267949 -157.07963267949 ]
+krws_desat: 
+5 0 0 0 
+0 5 0 0 
+0 0 5 0 
+0 0 0 5 
+flag_rws_mom_mgmt (ph1): 0
+flag_rws_null_ctrl: 0
+flag_detumble_with_rws: 1
+w_sc_detumble_off: 0.000872664625997165
+auto_phase_trans: 1
+spin_rate: 0.00523598775598299
+flag_rws_mom_mgmt (ph2): 1
+flag_rws_null_ctrl: 1
+flag_detumble_with_rws: 0
+krws_null: 0.002
+Torquerods momentum management gain for the RWs: 
+0.0035 0 0 0 
+0 0.0035 0 0 
+0 0 0.0035 0 
+0 0 0 0.0035 
+w_rws_bias: 
+-157.07963267949 -157.07963267949 -157.07963267949 -157.07963267949 
+hrws_bias: 
+-3.00022098417825 -3.00022098417825 -3.00022098417825 -3.00022098417825 
+flag_rws_null_ctrl: 0
+flag_rws_mom_mgmt: 1
+Sun pointing target vector: [ 0 0 -1 ]
+Sun pointing target rates: [ 0 0 0 ] rad/s
+Proportional gains - safe mode: 
+0.55 0 0 
+0 0.55 0 
+0 0 0.55 
+Proportional gains - safe mode: 
+20 0 0 
+0 20 0 
+0 0 20 
+Controller bandwidth - safe mode (Hz): 0
+sun_vec_tol: 0.1
+Max proportional control torque (Nm): 1.7
+RWs null controller gain: 0.01
+Reaction wheel detumbling gain: 20
+mag_derivative_gain: 0.5
+B-dot control gains: 5000000000
+     *** END Modified Safe Parameters ***
+
+     *** Modified Nominal Parameters ***
+krws_desat: 
+0.08 0 0 0 
+0 0.08 0 0 
+0 0 0.08 0 
+0 0 0 0.08 
+RWs null controller gain: 0.01
+Flag to activate momentum management: 1
+w_rws_tol: 10
+wait_before_switch: 200
+Max SC rate during slew rotation (deg/s): 0.8
+omega_max_scalar_z: 0.35
+omega_orbit_scalar: 0.058
+Max SC acceleration during slew rotation (deg/s2): 0.01
+Controller bandwidth - nom mode (Hz): 0.03
+Damping ratio - nom mode: 0.707
+Proportional gains - nom mode: 
+31.9775182595295 0 0 
+0 28.4244606751374 0 
+0 0 42.636691012706 
+239.879448657502 0 0 
+0 213.226176584446 0 
+0 0 319.83926487667 
+0.602762018665028 0 0 
+0 0.535788461035581 0 
+0 0 0.803682691553371 
+angle_error_ctrl_int_on: 0.0174532925199433
+prop_ctrl_max_mag: 0.6
+Dderivative_ctrl_max_mag: 1
+integral_ctrl_max_mag: 0.6
+     *** END Modified Nominal Parameters ***
+Feedback gains: Bandwidth: 0.03 Hz, Damping ratio: 0.707
+Max proportional control torque (Nm): 1.7
+Max derivative control torque (Nm): 1.7
+Max integral control torque (Nm): 0.001
+Quaternion target: [1, 0, 0, 0]
+Max SC rate during slew rotation: 0.8 deg/s
+Max slew rate: 0.8 deg/s
+Safe mode: Sun pointing bandwidth: 0.01 Hz, Damping ratio: 0.707
+RWs momentum bias (Nms): -0.005 0.005 -0.005 0.005 
+Detumbling: krw: 20
+B-dot gains: 5000000000
+Safe mode reaction wheel bias norm (RPM): 1500
+Geodetic target set to (radians for lat/long, meters for altitude): [0.441166648133804 rad, 0.965101609052622 rad, 0 m]
+Flag to override geod_target with a moving ECEF target: false
+Flag to use SGP4 in ADCS: false
+
+ -------- ACTUATORS PARAMETERS --------
+MTQ Max Dipole (Am^2): 
+ 120
+ 120
+ 120
+RW Control Allocation Matrix (Crw): 
+ 0.707106781186548  0.707106781186547  0.707106781186547  -0.707106781186547 
+ -0.707106781186547  0.707106781186548  0.707106781186547  -0.707106781186548 
+ -0.707106781186548  -0.707106781186547  0.707106781186547  0.707106781186547 
+Pseudo-Inverse RW Control Allocation Matrix (Cprw): 
+ 0.353553390593274  -0.353553390593274  -0.353553390593274 
+ 0.353553390593274  0.353553390593274  0.353553390593274 
+ -0.353553390593274  -0.353553390593274  0.353553390593274 
+ 0.353553390593274  0.353553390593274  0.353553390593274 
+RW Inertia (Irw): 0.0191 Kgm^2 (Verify was 3.19e-5)
+RW Inertia (Irw): 0.0191 Kgm^2 (Verify was 3.19e-5)
+RW Inertia (Irw): 0.0191 Kgm^2 (Verify was 3.19e-5)
+RW Max Speed: 628.318530717959 RPM
+RW Max Torque: 0.3 Nm (RWs max torque)
+RW Healthy Status: [ true true true true ]
+RW Bias Speed (w_rw_bias): 125.663706143592 RPM (RWs bias speed)
+Null vector: [ 0 0 0 ]

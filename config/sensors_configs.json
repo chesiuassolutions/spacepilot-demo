@@ -1,0 +1,154 @@
+{
+  "sensors": {
+    "ss": {
+      "orientation": {
+        "value": [
+          [0.7071, -0.5, -0.7071, 0.5, 0.866, -0.7071, -0.866, 0.7071, 0.7071, -0.5, -0.7071, 0.5, 0.866, -0.7071, -0.866, 0.7071],
+          [0.5, 0.866, -0.5, -0.866, 0.7071, 0.5, -0.7071, -0.5, 0.5, 0.866, -0.5, -0.866, 0.7071, 0.5, -0.7071, -0.5],
+          [0.5, 0.5, 0.5, 0.5, 0, 0.5, 0, 0.5, -0.5, -0.5, -0.5, -0.5, 0, -0.5, 0, -0.5]
+        ],
+        "unit": "",
+        "comment": "Sun sensors orientation matrix"
+      },
+      "position": {
+        "value": [
+          [4.5027, -4.5027, -4.5027,  4.5027],
+          [4.5027,  4.5027, -4.5027, -4.5027],
+          [12.250,  12.250,  12.250,  12.250]
+        ],
+        "unit": "m",
+        "comment": "Sun sensors position coordinates"
+      },
+      "half_fov": {
+        "value": 80,
+        "unit": "deg",
+        "comment": "Half field of view"
+      },
+      "R_bs": {
+        "value": [
+          [-1, 0, 0],
+          [0, -1, 0],
+          [0, 0, -1]
+        ],
+        "unit": "",
+        "comment": "Body to sensor rotation matrix"
+      },
+      "irradiation_level": {
+        "value": 1361,
+        "unit": "W/m2",
+        "comment": "Irradiation level"
+      },
+      "irradiation_albedo": {
+        "value": 100,
+        "unit": "W/m2",
+        "comment": "Irradiation due to albedo"
+      },
+      "irradiation_noise": {
+        "value": 0.05,
+        "unit": "",
+        "comment": "Irradiation noise level"
+      }
+    },
+    "gyro": {
+      "noise_flag": {
+        "value": 0,
+        "unit": "",
+        "comment": "Noise flag for gyroscope"
+      },
+      "bias": {
+        "value": [0.005, -0.005, -0.002],
+        "unit": "rad/s",
+        "comment": "Gyroscope bias"
+      },
+      "noise_variance": {
+        "value": 0,
+        "unit": "",
+        "comment": "Gyroscope noise variance"
+      },
+      "ARW": {
+        "value": 0.00087,
+        "unit": "rad/sqrt(s)",
+        "comment": "Angular random walk"
+      },
+      "bias_instability": {
+        "value": 0.0000145,
+        "unit": "rad/s",
+        "comment": "Gyroscope bias instability"
+      },
+      "scale_factor": {
+        "value": 1.001,
+        "unit": "",
+        "comment": "Gyroscope scale factor"
+      },
+      "Rot_bs": {
+        "value": [
+          [1, 0, 0],
+          [0, 1, 0],
+          [0, 0, 1]
+        ],
+        "unit": "",
+        "comment": "Body to sensor rotation matrix"
+      },
+      "calib_matrix": {
+        "value": [
+          [1, 0, 0],
+          [0, 1, 0],
+          [0, 0, 1]
+        ],
+        "unit": "",
+        "comment": "Calibration matrix"
+      }
+    },
+    "star_trackers": {
+      "noise_var": {
+        "value": 1.93925e-5,
+        "unit": "",
+        "comment": "Noise variance for star trackers"
+      },
+      "noise_flag": {
+        "value": 0,
+        "unit": "",
+        "comment": "Noise flag for star trackers"
+      },
+      "vectors": {
+        "value": [
+          [1, -1],
+          [0, 0],
+          [0, 0]
+        ],
+        "unit": "",
+        "comment": "Reference vectors for star trackers"
+      },
+      "Rot_q1b": {
+        "value": [
+          [1, 0, 0],
+          [0, 1, 0],
+          [0, 0, 1]
+        ],
+        "unit": "",
+        "comment": "Quaternion 1 body to star tracker rotation"
+      },
+      "Rot_q2b": {
+        "value": [
+          [1, 0, 0],
+          [0, 1, 0],
+          [0, 0, 1]
+        ],
+        "unit": "",
+        "comment": "Quaternion 2 body to star tracker rotation"
+      }
+    },
+    "gnss": {
+      "pos_noise_variance": {
+        "value": 0,
+        "unit": "m2",
+        "comment": "Position noise variance for GNSS"
+      },
+      "vel_noise_variance": {
+        "value": 0,
+        "unit": "m2/s2",
+        "comment": "Velocity noise variance for GNSS"
+      }
+    }
+  }
+}

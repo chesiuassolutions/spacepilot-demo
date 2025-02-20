@@ -1,0 +1,86 @@
+{
+  "simulation":{
+    "simulation_time": {
+      "units": "s",
+      "value": 16000
+    },
+    "scenario_num" : "NOMINAL", 
+    "init_conditions" : {
+      "spacecraft" : {
+        "init_rate": {
+          "value": [-0.4, 0.2, -0.5],
+          "unit": "deg/s",
+          "comment": "Spacecraft initial angualar velocity"
+        },
+        "init_angles": {
+          "value": [-15, 0, -70],
+          "unit": "deg",
+          "comment": "Spacecraft initial Roll, Pitch, Yaw angles"
+        },
+        "init_rws_rate": {
+          "value": [0, -0, 0, -0],
+          "unit": "rpm",
+          "comment": "Reaction wheels initial speed rate"
+        }
+      },
+      "init_angles": {
+        "value": [-15, 0, -70],
+        "units": "deg",
+        "comment": "Spacecraft initial Roll, Pitch, Yaw angles"
+      },
+      "init_rws_rate": {
+        "value": [0, -0, 0, -0],
+        "units": "rpm",
+        "comment": "Reaction wheels initial speed rate"
+      },
+      "time": {
+        "start_time": {
+          "value": "2024-11-21T12:12:12.000",
+          "units": "UTC",
+          "comment": "Simulation start time in UTC format"
+        },
+        "end_time": {
+          "value": "2024-12-22T12:12:12.000",
+          "units": "UTC",
+          "comment": "Simulation end time in UTC format"
+        },
+        "format": {
+          "value": "UTC",
+          "comment": "Time format used for the simulation"
+        }
+      },
+      "orbit": {
+        "altitude": {
+          "value": 600e3,
+          "units": "m",
+          "comment": "Orbital altitude above Earth"
+        },
+        "eccentricity": {
+          "value": 0.0017,
+          "units": "",
+          "comment": "Orbital eccentricity"
+        },
+        "inclination": {
+          "value": 85,
+          "units": "deg",
+          "comment": "Orbital inclination"
+        },
+        "raan": {
+          "value": 160,
+          "units": "deg",
+          "comment": "Right Ascension of Ascending Node"
+        },
+        "omega": {
+          "value": 0,
+          "units": "deg",
+          "comment": "Argument of periapsis"
+        },
+        "true_anomaly": {
+          "value": 270,
+          "units": "deg",
+          "comment": "Initial true anomaly"
+        }
+      }
+    }
+  }
+}

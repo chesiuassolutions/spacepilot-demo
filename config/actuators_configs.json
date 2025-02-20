@@ -1,0 +1,64 @@
+{
+  "actuators":{
+      "rws": {
+        "Irw" : {
+          "unit" : "Kgm2",
+          "value" : 0.0191,
+          "comment" : "12 Nms RWs"
+        },
+        "w_rw_bias" : {
+          "unit" : "RPM",
+          "value" : 1200,
+          "Comment" : "RWs bias speed"
+        },
+        "Crw" : {
+          "value" : [
+          [0.707106781186548,        -0.707106781186547,        -0.707106781186548,         0.707106781186547],
+          [0.707106781186547,         0.707106781186548,        -0.707106781186547,        -0.707106781186548],
+          [0.707106781186547,         0.707106781186547,         0.707106781186547,         0.707106781186547]
+          ],
+          "unit" : "",
+          "comment" : "RWs control allocation matrix"
+        },
+        "Cprw": {
+          "value" : [
+            [ 0.353553390593274,   0.353553390593273,   0.353553390593274],
+            [-0.353553390593274,   0.353553390593274,   0.353553390593274],
+            [-0.353553390593274,  -0.353553390593274,   0.353553390593274],
+            [ 0.353553390593274,  -0.353553390593274,   0.353553390593274]
+          ],
+          "unit" : "",
+          "comment" : "Pseudo inverse RWs control allocation matrix"
+        },
+        "rws_healthy": {
+          "value" : [true, true, true, true],
+          "unit" : "",
+          "comment" : "Set true to all the column associated with the working RW"
+        },
+        "max_speed" : {
+          "value" : 6000,
+          "unit" : "RPM",
+          "comment" : ""
+        },
+        "max_torque" : {
+        "value" : 0.3,
+        "unit" : "Nm",
+        "comment" : "RWs max torque"
+        }
+      },
+      "mtq" : {
+        "max_dipole" : {
+          "units" : "Am2",
+          "value" : [120, 120, 120],
+          "comment" : "Maximum dipole moment for magnetorquers"
+        }
+      },
+      "thr": {
+        "max_force": {
+          "value": 0.01,
+          "unit": "N",
+          "comment": "Maximum force allowed for the thrusters"
+      }
+    }
+  }
+}

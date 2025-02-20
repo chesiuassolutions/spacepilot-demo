@@ -28,8 +28,8 @@ space_pilot_simulator/
 ## Installation
 Clone the repository:
 ```sh
-git clone https://github.com/chesiuassolutions/adcs-gnc-demo.git
-cd adcs-gnc-demo
+git clone https://github.com/chesiuassolutions/spacepilot-demo.git
+cd spacepilot-demo
 ```
 
 ## Running the Simulator

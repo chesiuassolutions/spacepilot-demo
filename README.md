@@ -1,7 +1,7 @@
 # Space Pilot Simulator DEMO
 
 ## Overview
-**Space Pilot** is the onboard controller for spacecraft. It leverages legacy algorithms that have been successfully operating in space, combined with AI-driven enhancements. This repository provides a simulator that integrates **Space Pilot**, allowing users to fly a virtual spacecraft, visualize sensor readings, and interact with actuators.
+**SpacePilot** is the onboard controller for spacecraft. It leverages legacy algorithms that have been successfully operating in space, combined with AI-driven enhancements. This repository provides a simulator that integrates **Space Pilot**, allowing users to fly a virtual spacecraft, visualize sensor readings, and interact with actuators.
 
 Space Pilot is designed for ARM processors, but in this repository, you can run the entire simulation on Linux.
 
